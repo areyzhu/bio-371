@@ -18,9 +18,19 @@ If find A
 Then if A or G → STOP
 If find G then A→ STOP
 New array list
-Transcribe it : Copy ORFs--------------------------------------------------------------------Aretha
+/*Transcribe it : Copy ORFs--------------------------------------------------------------------Aretha
 mRNA: Copy ORF ArrayList--- change T to U
-tRNA print it -----------------------------------------------------------------------------------Elena
+*/
+	  ArrayList<String> mRNA = new ArrayList<String>();
+	  ArrayList<String> mRNA = (ArrayList<String>)DNA.clone();
+	    for (int i = 0; i < mRNA.size(); i++) {
+		    if mRNA.get(i)=="T" {
+			    mRNA.set(i, "U");	    
+		    }	    
+	    }
+	  System.out.println(mRNA);
+	    
+/*tRNA print it -----------------------------------------------------------------------------------Elena
 Transcribe it by pairings
 Amino acids - use mod to keep track of position in the codon---------------------------Issy
 (if i mod 3  == 0)
